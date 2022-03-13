@@ -2,9 +2,18 @@ const socket = io()
 let name;
 let textarea = document.querySelector("#textarea");
 let messageArea = document.querySelector(".message_area");
+let sendBtn = document.querySelector(".btn");
+
 do {
    name = prompt("Please enter your name: ")
 }while(!name)
+
+sendBtn.addEventListener('click', () => {
+    if(textarea.value){
+        sendMessage(textarea.value);
+    }
+    
+})
 
 textarea.addEventListener('keyup', (e) => {
     if(e.key === 'Enter'){

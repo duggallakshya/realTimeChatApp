@@ -40,7 +40,7 @@ section.chat_section {
     padding-top: 40px;
 }
 textarea {
-    width: 100%;
+    width: 90%;
     border: none;
     padding: 20px;
     font-size: 16px;
@@ -70,4 +70,28 @@ textarea {
     left: 0;
     color: #333;
     font-size: 14px;
+}
+
+.btn{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    background: dodgerblue;
+    border: none;
+    border-radius: 50%;
+    font-family: sans-serif;
+    color: white;
+    /* text-emphasis:; */
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: rgb(109, 226, 109)
+}
+
+.textbox_area{
+    display: flex;
+    flex-direction: row;
+
 }
